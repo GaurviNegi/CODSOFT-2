@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="projects.css">
+    <title>Projects</title>
+</head>
+<body>
+    <div class="container">   
+        <div class="sidebar">
+          
+       
+            <nav class="nav">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/contact.html">contact</a></li>
+                  <li><a href="/projects.html">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+       
+           
+        <div class="main">
+
+            <div class="icon-container">  
+                <img class="icons menu" src="images/menu.png" alt="">
+                <img class="icons cross" src="images/cross1.png" alt="">
+              </div>
+      
+              <div class="content-container">
+                 <h1 class="headings">My Projects Gallery</h1>
+                 <p>Hello my name is Gaurvi Negi. I am tech enthusiast and programmer.I love programming and I am comfortable in coding with java, python , javascript and c.
+                    I love web development too. I do all my tasks with 100% dedication and I am always ready to learn new things and experiments.
+                 </p>
+                 <!--to be created-->
+                
+
+             <!--divs for projects-->
+             <div class="box-container">
+                <div class="row">
+                    <div class="card">
+                        <div class="header" style="background-image: url(/images/calci.png);">
+                          <h1>calculator</h1>
+                        </div>
+                      
+                        <div class="box">
+                          <p>developed using html, css, Bootsrap-4, and js </p>
+                          <p><a href=""> see here </a></p>
+                        </div>
+                      </div>
+<!--hijoqjdokop-->
+                      <div class="card">
+                        <div class="header" style="background-image: url(/images/weatherApp.png);">
+                          <h1>Weather app</h1>
+                        </div>
+                      
+                        <div class="box">
+                          <p>developed using weather api, html css and javascript</p>
+                          <p><a href=""> see here </a></p>
+                        </div>
+                      </div>
+                </div>
+
+   <!----next row-->             
+                <div class="row">
+                    <div class="card">
+                        <div class="header" style="background-image:url(images/connect-four.png) ;">
+                          <h1>Connect-4 game</h1>
+                        </div>
+                      
+                        <div class="box">
+                          <p>java GUI project made using javaFx and Scene Builder</p>
+                          <p><a href="https://github.com/GaurviNegi/connect-four-game.git"> see here </a></p>
+                        </div>
+                      </div>
+<!--hijoqjdokop-->
+                      <div class="card">
+                        <div class="header" style="background-image:url(images/musicplayer.png) ;">
+                          <h1>music player</h1>
+                        </div>
+                      
+                        <div class="box">
+                          <p>Python GUI project made via Tkinter</p>
+                          <p><a href="https://github.com/GaurviNegi/python-projects/blob/master/setup%20screen.py"> see here </a></p>
+                        </div>
+                      </div>
+                </div>
+
+
+
+<!----next row-->  
+          
+<div class="row">
+    <div class="card">
+        <div class="header" style="background-image:url(images/todolist.png) ;">
+          <h1>to-do list</h1>
+        </div>
+      
+        <div class="box">
+          <p>javascript project using Json</p>
+          <p><a href=""> see here </a></p>
+        </div>
+      </div>
+<!--hijoqjdokop-->
+      <div class="card">
+        <div class="header" style="background-image: url(images/virtual-assistant.png);">
+          <h1>virtual assistant</h1>
+        </div>
+      
+        <div class="box">
+          <p>Python project usig libraries</p>
+          <p><a href=""> see here </a></p>
+        </div>
+      </div>
+</div>
+ </div>
+
+    </div>
+
+               </div>
+                 <div class="social-side-menu">
+                  <a href="https://www.facebook.com/profile.php?id=100026514433833&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://github.com/GaurviNegi"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/gaurvi-negi-a6074a234  "><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.instagram.com/gaurvinegi_/"> <i class="fab fa-instagram"></i></a>
+                 </div>
+
+            </div>
+        </div>
+
+
+
+        <script> 
+            sidebar=document.querySelector(".sidebar");
+            cross=document.querySelector(".cross");
+            menu=document.querySelector(".menu");
+            menu.addEventListener("click",function(){
+                sidebar.classList.toggle("active-sidebar");
+                cross.classList.toggle("active");
+                menu.classList.toggle("hide");
+            });
+    
+            cross.addEventListener("click",function(){
+                sidebar.classList.toggle("active-sidebar");
+                cross.classList.toggle("active");
+                menu.classList.toggle("hide");
+            });
+        </script>       
+</body>
+</html>

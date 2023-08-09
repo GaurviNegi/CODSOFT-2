@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="all.css">
+     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <title>ABOUT</title>
+</head>
+<body>
+    <div class="container">   
+        <div class="sidebar">
+          
+       
+            <nav class="nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+           
+        <div class="main">
+
+            <div class="icon-container">  
+                <img class="icons menu" src="images/menu.png" alt="">
+                <img class="icons cross" src="images/cross1.png" alt="">
+              </div>
+      
+              <div class="content-container">
+                 <h1 class="headings">about me</h1>
+                 <p>Hello my name is Gaurvi Negi. I am tech enthusiast and programmer. I love programming and I am comfortable in coding with java, python , javascript and c.
+                     I love web development too. I do all my tasks with 100% dedication.
+                 </p>
+
+                 <div class="category">
+                    <h2 class="headings-sm">Education</h2>
+                    <h3>High school</h3> 
+                    <p>subjects: hindi,english,science,maths,social studies</p>
+                    <p>school & board: Scholars Academy - CBSE board</p>
+                    <p>score: 93.2%</p>
+
+                    <h3>Intermediate</h3> 
+                    <p>subjects: physics, chemistry , maths, biology , physical science, english</p>
+                    <p>school & board: Scholars Academy - CBSE board</p>
+                    <p>score: 95.2%</p>
+
+                    <h3>B.TECH in computer science and engineering</h3> 
+                    
+                    <p>Dev Bhoomi Uttarakhand University</p>
+                    <p>cgpa: currently pursuing - 3 year</p>   
+                 </div>
+                 
+
+                 <div class="category">
+                     <h2 class="headings-sm">skills</h2>
+                     <span>java:</span>
+                     <div class=outside ><div  class=inside style="width:80%">80%</div></div>
+
+   
+                    <span>python:</span>
+                    <div class=outside><div  class=inside style="width:50%">50%</div></div>
+
+
+                   <span>front-end development:</span>
+                   <div class=outside ><div class=inside style="width:90%">90%</div></div>
+
+                  <span>backend development(still learning):</span>
+                  <div class=outside ><div  class=inside style="width:50%">50%</div></div>
+
+                  <span>mysql</span>
+                  <div class=outside ><div  class=inside style="width:70%" >70%
+                 </div></div>
+
+                 <span>mongodb:</span>
+                 <div class=outside><div  class=inside style="width:70%">70%</div></div>
+
+                <span>dsa:</span>
+                 <div class=outside><div  class=inside style="width:80%">80%
+                </div></div>
+
+                <span>problem solving:</span>
+                <div class=outside ><div  class=inside style="width:95%">95% </div></div>
+                    </div>
+                
+                  <div class="category">
+                    <h2 class="headings-sm">certifications</h2>
+                    <ul>
+                        <li>java basic certification</li>
+                        <li>front-end certification</li>
+                        <li>linux certification</li>
+                        <li>Azure fundamentals certification</li>
+                    </ul></div>
+                 
+                 
+              </div>
+           
+              <div class="social-side-menu">
+                <a href="https://www.facebook.com/profile.php?id=100026514433833&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/GaurviNegi"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gaurvi-negi-a6074a234  "><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/gaurvinegi_/"> <i class="fab fa-instagram"></i></a>
+             </div>
+            </div>
+        </div>
+     
+        <script> 
+            sidebar=document.querySelector(".sidebar");
+            cross=document.querySelector(".cross");
+            menu=document.querySelector(".menu");
+            menu.addEventListener("click",function(){
+                sidebar.classList.toggle("active-sidebar");
+                cross.classList.toggle("active");
+                menu.classList.toggle("hide");
+            });
+    
+            cross.addEventListener("click",function(){
+                sidebar.classList.toggle("active-sidebar");
+                cross.classList.toggle("active");
+                menu.classList.toggle("hide");
+            });
+        </script>
+</body>
+</html>

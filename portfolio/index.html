@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>index</title>
+</head>
+<body>
+  
+    <div class="container">   
+        <div class="sidebar">
+          
+            <nav class="nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">contact</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+       
+           
+        <div class="main">
+            <div class="">  
+                <img class="icons menu" src="images/menu.png" alt="">
+                <img class="icons cross" src="images/cross1.png" alt="">
+              </div>
+            <div class="info-container">
+                <p class="greet">Hi I am</p>
+                <p class="name">Gaurvi Negi</p>
+                <p class="about">I am a front end wev developer & programmer</p>
+                <p class="content">Hello my name is Gaurvi Negi. I am tech enthusiast and programmer.I love programming and I am comfortable in coding with java, python , javascript and c.
+                    I love web development too. I do all my tasks with 100% dedication and I am always ready to learn new things and experiments.
+                 </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100026514433833&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/GaurviNegi"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurvi-negi-a6074a234  "><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/gaurvinegi_/"> <i class="fab fa-instagram"></i></a>
+                 </div>
+               <a href=""> <button class="btn-lg">download cv</button></a>
+                <a href="/contact.html"><button class="btn-lg">contact me</button></a>
+
+<div class="marquee-container">
+    <marquee behavior="" direction="right" scrollamount="12" >
+        <div class="logo"> 
+             <div class="row">
+             <img src="/images/java.png" alt="">
+             <img src="/images/html.png" alt="">
+             </div>
+             
+             <div class="row">
+             <img src="/images/c.png" alt="">
+             <img src="/images/mongodb.png" alt="">
+             </div>
+             
+             <div class="row">
+             <img src="/images/icons8-excel-48.png" alt="">
+             <img src="/images/sql.png" alt="">
+             <img src="/images/python (2).png" alt=""></div>
+             
+         </div></marquee>
+</div>
+
+            
+            </div>
+            <div class="img">
+                <img src="images/img.png" alt="">
+            </div>
+        </div>
+     
+    </div>
+
+    <script> 
+        sidebar=document.querySelector(".sidebar");
+        cross=document.querySelector(".cross");
+        menu=document.querySelector(".menu");
+        menu.addEventListener("click",function(){
+            sidebar.classList.toggle("active-sidebar");
+            cross.classList.toggle("active");
+            menu.classList.toggle("hide");
+        });
+
+
+        cross.addEventListener("click",function(){
+            sidebar.classList.toggle("active-sidebar");
+            cross.classList.toggle("active");
+            menu.classList.toggle("hide");
+        });
+    </script>
+</body>
+</html>

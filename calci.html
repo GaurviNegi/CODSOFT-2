@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .flexbox{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .margin{
+         padding: 15px;
+         border:10px solid burlywood;
+         background-color: rgb(45, 46, 41);
+      
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+        <h4 style="color:cornsilk;font-size: 1.8vw;">This is a simple calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.The calculator includes functions for square root, percentage, pi, exponents, powers and rounding.</h4>
+     
+      </div>
+
+
+    <div class="flexbox">
+      
+      <!--calculator body-->
+        <div>
+          <div class="container" style="width:30vw; background-color: rgb(30, 27, 27);">
+     <!--heading calculator-->
+            <div class="container"><h5 class="text-center text-white font-weight-bold" style = "font-size: 2vw;"  >CALCULATOR</h5></div>
+     <!--problem and ans box-->       
+            <div class="bg-light border border-dark" style="height:8vw;">
+                <p id="problem" style="text-align: right;font-family: Source Code Pro; font-size: 1.8vw; font-weight: bold;"></p>
+                <p id="solution" style="text-align: right; font-family: Source Code pro; font-size: 2.5vw;font-weight:bold"></p>
+             </div>
+
+             <!--clear button-->
+             <div type="button" class="container-fluid row "><button class="btn btn-danger mx-auto" style="border-radius: 70%; margin-top: 4px;">AC</button></div>
+             <!--first row-->
+             <div class="container row my-2 mx-auto" style="width:100%; display:flex; justify-content: space-evenly; ">
+              <button type="button" class="btn btn-dark " style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>()</strong></button>
+              <button type="button" class="btn btn-dark " style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>%</strong></button>
+              <button type="button" class="btn btn-dark" style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>/</strong></button>
+              <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>CE</strong></button>
+            </div>
+            
+
+
+            <!--second row-->
+         <div class="container row my-2 mx-auto" style="width:100%; display:flex; justify-content: space-evenly;">
+          <button type="button" class="btn btn-light" style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>1</strong></button>
+          <button type="button" class="btn btn-light" style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>2</strong></button>
+          <button type="button" class="btn btn-light" style="border-radius:40%;padding:10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>3</strong></button>
+          <button type="button" class="btn btn-dark" style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>*</strong></button>
+          
+
+       </div>
+  
+      <!--third row-->
+       <div class="container my-2  row mx-auto" style="width:100%; display:flex; justify-content: space-evenly;">
+          <button type="button" class="btn btn-light " style="border-radius:40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>4</strong></button>
+          <button type="button" class="btn btn-light" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>5</strong></button>
+          <button type="button" class="btn btn-light" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>6</strong></button>
+          <button type="button" class="btn btn-dark " style="border-radius: 40%;padding: 10px;width: 3.5vw;height:4.5vw;font-size: 1.5vw;"><strong>+</strong></button>
+        
+       </div>
+  
+     <!--fourth row-->
+       <div class="container my-2  row mx-auto" style="width:100%; display:flex; justify-content: space-evenly;">
+          <button type="button" class="btn btn-light" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>7</strong></button>
+          <button type="button" class="btn btn-light " style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>8</strong></button>
+          <button type="button" class="btn btn-light" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>9</strong></button>
+          <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>-</strong></button>
+          
+       </div>
+  
+  <!--fifth row-->
+       <div class="container my-2 row mx-auto" style="width:100%; display:flex; justify-content: space-evenly;"> 
+          <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>X<sup>y</sup></strong></button>
+          <button type="button" class="btn btn-dark " style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>0</strong></button>
+          <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>.</strong></button>
+          <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>=</strong></button>
+        
+       </div>
+
+<!--sixth row-->
+       <div class="container my-2 row mx-auto" style="width:100%; display:flex; justify-content: space-evenly;"> 
+        <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>R2</strong></button>
+        <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>R0</strong></button>
+        <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>π</strong></button>
+      <button type="button" class="btn btn-dark" style="border-radius: 40%;padding: 10px;width: 3.5vw;height: 4.5vw;font-size: 1.5vw;"><strong>√</strong></button>
+      </div>
+      
+      <div class="container row  text-center text-white d-block" style="font-size: 1vw;">
+         WILL EASE YOUR CALCULATIONS. IF NOBODY WE LOVE YOU!
+         </div>
+      
+            
+              
+            </div>
+        </div>
+        
+       
+<!--function description-->
+      <div>
+        <div class="container-fluid"> 
+          <h2><b style="font-size: 2.5vw;">Functions on the Calculator</b></h2>
+         <pre style=" line-height: 1.6; font-size: 1.5vw;">
+÷   Division
+×   Multiplication
++   Addition
+−   Subtraction
+=   Calculate
+CE   Clear entry
+AC   All clear
+√x   Square root
+%   Percentage
+π   pi = 3.1415926536
+xy   Exponent
+R2   Round to 2 decimals
+R0   Round to 0 decimals </pre></div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+
+      // js for calculator
+      letbracket=0;
+      bactive=true;
+      let str="";
+      let ans=""
+      buttons=document.querySelectorAll('button');
+      problem=document.getElementById('problem');
+      solution=document.getElementById('solution');
+buttons.forEach(item => {
+               item.addEventListener('click',(e)=>{
+               if(item.innerText=='='){
+                  try{ans=eval(str);
+                  solution.innerText="="+ans;}
+                  catch(err){
+                     alert("you are not using correct syntax for the problem statement");
+                     problem.innerText="entered wrong syntax";
+                   }}
+
+               else if(item.innerText=='AC'){
+                  bactive=true;
+                  str="";
+                  bracket=0;
+                  problem.innerText=str;
+                  ans="";
+                  solution.innerText=ans;
+               }
+               
+
+               else if(item.innerText=='CE'){
+                  if(str.charAt(str.length-1)=='('){bracket--;}
+                  if(str.charAt(str.length-1)==')'){bracket++;}
+
+                  str=str.substring(0,str.length-1);
+                  problem.innerText=str;
+               }
+
+               else if(item.innerText=='√'){
+                 n = Math.sqrt(eval(str));
+                 ans = n;
+                solution.innerText = n;
+               }
+            
+              else if(item.innerText=='R0'|| item.innerText=='R2'){
+                try{
+                  if(item.innerText=='R0')n = Math.round(eval(str));
+                  if(item.innerText=='R2')n = eval(str).toFixed(2);
+                    ans = n;
+                    solution.innerText = n;
+                }
+                catch(err){
+                  alert("enter the correct syntax");
+                     problem.innerText="entered wrong syntax";
+                }
+
+              }
+
+               else if(item.innerText=='π'){
+                str+=3.1415926536;
+                   problem.innerText=str;
+                   bactive=false;
+            }
+
+            else if(item.innerText=='Xy'){
+                     str+='**';
+                     problem.innerText=str;
+            }
+           
+            
+               else if(item.innerText=='()'){
+                  
+                  if( bracket>0 && bactive==false){
+                     str+=')';
+                     problem.innerText=str;
+                     bracket--;
+                  }
+
+                  //if(bracket==0)
+                  else{bracket++;
+                       bactive=true;
+                       if(str.charAt(str.length-1)==')'){str+='*(';problem.innerText=str;}
+                       else{ str+='(';
+                       problem.innerText=str;}
+                      
+                     }
+                 }
+
+                 else if(item.innerText=='+' || item.innerText=='-' || item.innerText=='/'||item.innerText=='*' || item.innerText=='%' || item.innerText=='**'){
+                 str+=item.innerText;
+                 problem.innerText=str;
+                 bactive=true;}    
+
+             else{ str+=item.innerText;
+                   problem.innerText=str;
+                   bactive=false;}}
+              
+              );
+      });
+     
+     
+
+
+
+
+
+    
+  </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  </body>
+</html>

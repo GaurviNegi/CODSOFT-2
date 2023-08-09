@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <title>contact</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+    <div class="container">   
+        <div class="sidebar">
+          
+       
+            <nav class="nav">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/contact.html">contact</a></li>
+                  <li><a href="/projects.html">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+       
+    
+        <div class="main">
+
+            <div class="icon-container">  
+                <img class="icons menu" src="images/menu.png" alt="">
+                <img class="icons cross" src="images/cross1.png" alt="">
+              </div>
+
+           
+        <div class="content-container">
+            <marquee behavior="" direction="">
+              <div style="display:flex;justify-content: space-between;">
+                  <div>gaurvinegi333@gmail.com</div> 
+                  <div>contact:6395063634</div>
+              </div>
+            </marquee>
+         
+            <h1 class="headings">contact me</h1> 
+             <form>      
+                <div class="form">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-input" id="email" placeholder="name@example.com" required>
+                <p class="small">we will not share your email with anyone</p>
+                </div>
+
+                <div class="form">
+                    <label for="phone">phone number:</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="123-457-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  </div>
+                
+                <div class="form">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-input" id="country" placeholder="India" required>
+                </div>
+
+                <div class="form">
+                  <label for="work">work/query:</label>
+                  <textarea class="form-input" id="work" rows="3"></textarea>
+                </div>
+              <button class="btn-sm">submit</button>
+              </form>
+
+            </div>
+
+              <div class="social-side-menu">
+                <a href="https://www.facebook.com/profile.php?id=100026514433833&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/GaurviNegi"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurvi-negi-a6074a234  "><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/gaurvinegi_/"> <i class="fab fa-instagram"></i></a>
+             </div>
+
+            </div>
+        </div>
+     
+        <script> 
+          sidebar=document.querySelector(".sidebar");
+          cross=document.querySelector(".cross");
+          menu=document.querySelector(".menu");
+          menu.addEventListener("click",function(){
+              sidebar.classList.toggle("active-sidebar");
+              cross.classList.toggle("active");
+              menu.classList.toggle("hide");
+          });
+  
+          cross.addEventListener("click",function(){
+              sidebar.classList.toggle("active-sidebar");
+              cross.classList.toggle("active");
+              menu.classList.toggle("hide");
+          });
+    
+         
+    
+          
+  
+  
+  
+      </script>
+    
+</body>
+</html>

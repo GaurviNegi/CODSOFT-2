@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+      
+ 
+}
+
+.container{
+    display: flex;
+
+}
+.sidebar{
+
+    height: 100vh;
+    background-color: #000220;
+    padding:0 23px;
+    position: fixed;
+   
+}
+
+.nav{ 
+    
+    margin: 22vh auto; 
+}
+
+.sidebar nav ul{
+    list-style: none;
+   
+}
+
+.nav ul li{
+    padding-bottom: 30px;
+}
+.nav ul li a{
+    padding:3px;  
+    font-family: "Fira Sans";
+    text-decoration: none;
+    color:#cecece;
+    font-size: 1.5rem;
+    font-weight: bold;
+  
+}
+.nav ul li a:hover{
+ text-decoration:underline;
+ text-decoration-color: #cecece;
+ border:2px solid #cecece;
+ border-style: dotted;
+}
+
+
+.btn-lg{
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #000220;
+    color: #cecece;
+    font-weight: bold;
+    border:1px solid black;
+    cursor:pointer;
+
+}
+
+.btn-sm{
+    margin: 8px 0;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: #000220;
+    color: #cecece;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+.btn-sm:hover{
+    background-color: #cecece;
+    color:#000220;
+}
+
+.btn-sm:active{
+    background-color:#000220;
+    color:#cecece;
+}
+
+.btn-lg:hover{
+    background-color: #cecece;
+    color:#000220;
+}
+.btn-lg:active{
+    background-color:#000220;
+    color:#cecece;
+}
+
+
+.icons{
+    background-color: #FFFFF0;
+    padding:1px;
+    width:14px;
+ 
+}
+.icons:active{
+    width:16px;
+}
+
+.menu{
+    position: fixed;
+    left:10px;
+    top:23px;
+    display:none;
+}
+
+.cross{
+    position:fixed;
+    left:80px;
+    top:23px;
+    display:none;
+}
+
+
+/*social side menu*/
+.social-side-menu{
+    position: fixed;
+    top:35vh;
+    right:8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+ }
+ 
+ .social-side-menu i{
+   font-size: 1.5rem; 
+   margin-bottom: 10px;
+   padding:2px;
+   width:20px;
+   text-align: center;
+   color: #000220;
+ 
+ }
+ 
+ .social-side-menu i:hover{
+     background-color:#000220;
+     color:#cecece;
+ }
+ 
+ .small{
+     font-size:0.8rem;
+     color:red;
+     
+ }
+ 
+
+ .headings{
+    font-size:2rem;
+    margin-bottom:42px ;
+    font-family: "Source Code Pro";
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px black;
+
+}
+
+.headings-sm{
+
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom:8px ;
+    font-family: "Source Code Pro";
+    text-transform: capitalize;
+   
+}
+

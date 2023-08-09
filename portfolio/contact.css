@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans:wght@100;300&family=Source+Code+Pro:wght@300&display=swap');    
+
+
+
+.main{
+
+ width:100vw;
+ height: 100vh;
+ display: flex;
+ align-items:center;
+ padding:0 23px 0 150px;
+ background-image: linear-gradient(white,#565656);
+}
+
+
+.form label{
+
+    display:block;
+    margin-bottom:4px;
+    font-size:1rem;
+    font-family:"Source Code Pro";
+    font-weight:bold;
+}
+.form{
+   margin:8px 0px;
+}
+
+.form .form-input{
+    padding:5px;
+    width:40vw;
+    font-family: "Fira Sans";
+}
+
+
+@media(max-width:351px){
+    .main{
+        padding-left:25px
+    }
+     .sidebar{
+         display:none;
+     }
+     .menu{
+         display:block;
+     }
+ 
+     .active-sidebar{
+         display:block;
+         background-color: rgb(0,2,32,0.8);
+     }  
+ 
+     .active{
+         display:block;
+     }
+ 
+     .hide{
+         display:none;
+     }
+ }
